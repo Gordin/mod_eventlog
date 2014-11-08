@@ -57,6 +57,7 @@ function _M.new_from_logs(to, from, logs)
         end
     end
 
+    stanza:tag("private", {xmlns = "urn:xmpp:carbons:2"}):up()
     return stanza
 end
 
